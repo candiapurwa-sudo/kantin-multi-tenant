@@ -10,8 +10,11 @@ permissions:
   contents: read
 
 jobs:
-  ci:
+ ci:
     runs-on: ubuntu-latest
+    env:
+      DB_CONNECTION: sqlite
+      DB_DATABASE: ':memory:'
 
     steps:
       - name: Checkout code
