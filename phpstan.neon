@@ -12,5 +12,5 @@ parameters:
 
     level: 7
 
-excludePaths:
+    excludePaths:
         - app/Modules/*/resources/*
